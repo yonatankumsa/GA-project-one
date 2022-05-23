@@ -1,7 +1,7 @@
            /////////GA PROJECT ONE/////////
 
 
-                  *******DE-CAR********
+                  *******DA-CAR********
 
 A car game like the jumping dinosaur from Google chrome where you can jump obstacles  to avoid losing the game.Obstacles will be coming infront of you to challenge you to play more enjoyfully .
 
@@ -9,7 +9,7 @@ A car game like the jumping dinosaur from Google chrome where you can jump obsta
                   ******  HOW TO PLAY  ****** 
 
  * User have to press the uparrow  key or can click the car to jump and avoid obstacles                
- * When user jumps he/she will  gain 100 pointes each time you jump an obstacle.
+ * User  will  gain 100 points each time they jump an obstacle.
 
  * If you end up hitting the obstacles the game will end.
 
