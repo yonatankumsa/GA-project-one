@@ -22,3 +22,4 @@ A car game like the jumping dinosaur from Google chrome where you can jump obsta
 
 //////refer to the image to see WIREFRAME
 
+/Users/yonatankumsa/Desktop/GA SEI/GA project one/GA-project-one/878518F8-B7E4-4E93-8C13-0F72776FCF52.JPEG
