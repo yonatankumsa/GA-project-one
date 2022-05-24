@@ -1,0 +1,106 @@
+body{
+    overflow-y: hidden;
+    background-color: black;
+}
+#background{
+    position: relative;
+    background: url("/img/78812fd262025d24e53452a1307bbb6d\ \(1\).png");
+    width:700px;
+    height:400px;
+    overflow-x: hidden;
+    background-size: cover; 
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    overflow-y: hidden;
+    z-index: 0;
+    filter:drop-shadow(1px 1px 7px white)
+
+}
+@keyframes yoni{
+    100%{transform: translateX(-1100px);}
+    
+}
+@keyframes noni{
+   
+    0%{transform: translateY(0px);}
+    30%{transform: translateY(5px);}
+    50%{transform: translateY(10px);}
+    75%{transform: translateY(5px);}
+    50%{transform: translateY(1px);}
+}
+
+#road{
+    background: url("/img/side-view-road-roadside-desert-260nw-1467479009.jpeg");
+    width:1900px;
+    height:100px;
+    animation: yoni 6s linear infinite;
+    position: absolute;
+    top:330px;
+    left:0%;
+    background-repeat: repeat-x;
+    display: block;
+    overflow-y: hidden;
+
+}
+/* #dacar{
+    width:500px;
+    height: 25px;
+    background: url("/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
+    
+
+} */
+
+img{
+    width:100px;
+  
+    background: url("/img/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
+    position: absolute;
+    left:100px;
+    top:250px;
+    animation: noni 600ms linear infinite;
+    transition: 500ms;
+    /* z-index: 10; */
+    
+}
+
+
+@keyframes hop{
+    0%{top:250px;}
+    30%{top:130px;}
+    50%{top:70px;}
+    /* 100%{top:0px;} */
+    70%{top:150px;}
+    100%{top:250px;}
+
+}
+
+.jump{
+    
+    width:100px;
+    position: absolute;
+    left:150px;
+    /* bottom:5%; */
+    animation: noni 1s linear infinite;
+    animation: hop 300ms  linear ;
+    transition: 500ms;
+    
+}
+
+.score{
+    position: relative;
+    top:-170px;
+    left:250px;
+}
+
+.obsclass{
+    width:60px;
+    height:40px;
+    position:relative;
+    top:125px;
+    left:600px;
+    z-index: 20;
+    animation: yoni 4s linear infinite;
+}
