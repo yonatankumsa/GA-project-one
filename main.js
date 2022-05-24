@@ -27,7 +27,7 @@ if(player.classList!=="jump"){
 console.log(obsLeft)
 
 if(playerTvalue===250 && obsLeft<180 && obsLeft>0 ){
-    // alert("You Crashed")
+    alert("You Crashed")
 }
 
       }, 1000);
