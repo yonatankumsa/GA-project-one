@@ -9,7 +9,7 @@ body{
     height:400px;
     overflow-x: hidden;
     background-size: cover; 
-    margin: 5rem auto;
+    /* margin: 5rem auto; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@ img{
   
     background: url("/img/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
     position: absolute;
-    left:100px;
+    left:10px;
     top:250px;
     animation: noni 600ms linear infinite;
     transition: 500ms;
@@ -71,7 +71,7 @@ img{
     0%{top:250px;}
     30%{top:130px;}
     50%{top:70px;}
-    /* 100%{top:0px;} */
+    50%{top:70px;}
     70%{top:150px;}
     100%{top:250px;}
 
@@ -89,10 +89,15 @@ img{
     
 }
 
-.score{
+#score1{
     position: relative;
     top:-170px;
     left:250px;
+}
+#score{
+    position: relative;
+    top:-170px;
+    left:370px;
 }
 
 .obsclass{

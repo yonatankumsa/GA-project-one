@@ -1,6 +1,9 @@
 let player = document.getElementById("player");
 let obs =document.getElementById("obs1")
 let gameBackground = document.getElementById("background");
+
+let gameScore = document.getElementById("score");
+
 function yoni(){
 if(player.classList!=="jump"){
 
@@ -18,17 +21,25 @@ if(player.classList!=="jump"){
 
       setInterval(function () {
         const playerTvalue= parseInt(window.getComputedStyle(player).getPropertyValue("top"));
-      
-    //  console.log(playerTvalue)
+    //     const rockTvalue= parseInt(window.getComputedStyle(obs).getPropertyValue("right"));
+    //  console.log(rockTvalue)
     //  let obsLeft = parseInt(window.getComputedStyle(obs).getPropertyValue("right"));
     //   console.log("OBS",obsLeft)
     let obsPos = obs.getBoundingClientRect()
     let obsLeft = obsPos.left
 console.log(obsLeft)
 
-if(playerTvalue===250 && obsLeft<180 && obsLeft>0 ){
+if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     alert("You Crashed")
+    gameScore.innerText=""
 }
 
-      }, 1000);
+if(playerTvalue!==250 && obsLeft<50 && obsLeft>10){
+gameScore.innerText++;
+}
+if(gameScore.innerText==="6"){
+    alert("high score")
+    gameScore.innerText=""
+}
+      }, 100);
 
