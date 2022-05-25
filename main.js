@@ -1,9 +1,11 @@
 let player = document.getElementById("player");
 let obs =document.getElementById("obs1")
 let gameBackground = document.getElementById("background");
-
+let gameover = document.getElementsByClassName("gamestatus")
 let gameScore = document.getElementById("score");
+let playagain= document.querySelector("button")
 
+let playagainbutton=document.getElementById("button")
 function yoni(){
 if(player.classList!=="jump"){
 
@@ -32,18 +34,23 @@ console.log(obsLeft)
 if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     // alert("You Crashed")
     gameScore.innerText=""
-    player.classList.remove("jump")
+   
+    gameover.innerText="GAMEOVER";
+    playagain.setAttribute("Id","button")
+    playagain.innerText="playagin"
+    obs.removeAttribute("class")
 }
 
-if(playerTvalue!==250 && obsLeft<50 && obsLeft>10){
+if(playerTvalue!==250 && obsLeft<70 && obsLeft>30){
 gameScore.innerText++;
-console.log(gameScore.innerText)
+console.log(gameScore.innerText)  
 }
 
 
-if(gameScore.innerText==="15"){
+if(gameScore.innerText>=3){
     alert("high score")
     gameScore.innerText=""
+    obs.removeAttribute("class")
 }
       }, 100);
 

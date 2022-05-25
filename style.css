@@ -53,7 +53,7 @@ body{
 
 } */
 
-img{
+.playerc{
     width:100px;
   
     background: url("/img/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
@@ -122,3 +122,21 @@ img{
     font-size: 50px;;
 
 } 
+
+/* .welcome{
+    background: rgba(255, 0, 0, 0.339);
+    width:1800px;
+    height:1700px;
+    position: relative;
+    z-index: 30;
+} */
+
+#button{
+    left:300px;
+    top:500px;
+    position: absolute;
+    height:35px;
+    width: 80px;
+    border-radius: 50%;
+
+}
