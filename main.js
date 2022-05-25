@@ -62,12 +62,13 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     playagain.setAttribute("Id","button")
     playagain.innerText="Play Again"
     obs.removeAttribute("class")
+    obs1.removeAttribute("class")
     gameover.innerTEXT="You Crashed";
     
 }
 
 
-if(playerTvalue!==250 && obs1Left<50 && obs1Left>10){
+if(playerTvalue!==250 && obs1Left<70 && obs1Left>30){
   
     gameScore.innerText++;
     console.log(gameScore.innerText)  
@@ -82,10 +83,11 @@ console.log(gameScore.innerText)
 
 // }
 
-if(gameScore.innerText>=15){
+if(gameScore.innerText>=10){
     alert(`YOU WIN \nYour Score Is:  ${gameScore.innerText}`)
     gameScore.innerText=""
     obs.removeAttribute("class")
+    obs1.removeAttribute("class")
     playagain.innerText="play Again"
     playagain.setAttribute("Id","button")
 }

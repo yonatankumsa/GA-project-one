@@ -125,7 +125,7 @@ body{
     left:600px;
     z-index: 1;
     animation: yoni 4s linear infinite;
-    filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768))
+    filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768)) 
     
 }
 
