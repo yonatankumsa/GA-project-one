@@ -66,14 +66,21 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     
 }
 
-if(playerTvalue!==250 && obsLeft<70 && obsLeft>50){
+
+if(playerTvalue!==250 && obs1Left<50 && obs1Left>10){
+  
+    gameScore.innerText++;
+    console.log(gameScore.innerText)  
+    }
+
+if(playerTvalue!==250 && obsLeft<70 && obsLeft>30){
 gameScore.innerText++;
 console.log(gameScore.innerText)  
 }
 
-if(gameScore.innerText=5){
+// if(gameScore.innerText=5){
 
-}
+// }
 
 if(gameScore.innerText>=15){
     alert(`YOU WIN \nYour Score Is:  ${gameScore.innerText}`)
