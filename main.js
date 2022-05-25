@@ -47,10 +47,15 @@ console.log(gameScore.innerText)
 }
 
 
-if(gameScore.innerText>=3){
+if(gameScore.innerText>=10){
     alert("high score")
     gameScore.innerText=""
     obs.removeAttribute("class")
+
+    playagain.setAttribute("Id","button")
 }
       }, 100);
 
+      playagain.addEventListener("click", function(){
+        obs.setAttribute("class", "obsclass")
+      })
