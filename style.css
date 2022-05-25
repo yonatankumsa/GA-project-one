@@ -140,3 +140,17 @@ body{
     border-radius: 50%;
 
 }
+#tree1{
+    width: 2000px;
+    height: 300px;
+    background: url("/img/10DFEFA3-9648-4F60-95AC-7204664608F4.PNG");
+    position: relative;
+    top:-100px;
+    left: 100px;
+    animation: yoni 20s linear infinite;
+    position: absolute;
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+    z-index: -10;
+   
+}
