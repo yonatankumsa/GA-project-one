@@ -1,5 +1,6 @@
 let player = document.getElementById("player");
 let obs =document.getElementById("obs1")
+let obs1 =document.getElementById("obs12")
 let gameBackground = document.getElementById("background");
 let gameover = document.getElementsByClassName("gamestatus")
 let gameScore = document.getElementById("score");
@@ -32,31 +33,53 @@ if(player.classList!=="jump"){
     //  let obsLeft = parseInt(window.getComputedStyle(obs).getPropertyValue("right"));
     //   console.log("OBS",obsLeft)
     let obsPos = obs.getBoundingClientRect()
+    let obs1Pos = obs1.getBoundingClientRect()
     let obsLeft = obsPos.left
+    let obs1Left = obs1Pos.left
+    console.log(`obj2 ${obs1Left}`)
+
 console.log(obsLeft)
+
+
+if(playerTvalue===250 && obs1Left<70 && obs1Left>30){
+    // alert("You Crashed")
+    gameScore.innerText=""
+   
+    // gameover.innerText="GAMEOVER";
+    playagain.setAttribute("Id","button")
+    playagain.innerText="Play Again"
+    obs.removeAttribute("class")
+    gameover.innerTEXT="You Crashed";
+    
+}
+
 
 if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     // alert("You Crashed")
     gameScore.innerText=""
    
-    gameover.innerText="GAMEOVER";
+    // gameover.innerText="GAMEOVER";
     playagain.setAttribute("Id","button")
-    playagain.innerText="play Again"
+    playagain.innerText="Play Again"
     obs.removeAttribute("class")
+    gameover.innerTEXT="You Crashed";
     
 }
 
-if(playerTvalue!==250 && obsLeft<70 && obsLeft>30){
+if(playerTvalue!==250 && obsLeft<70 && obsLeft>50){
 gameScore.innerText++;
 console.log(gameScore.innerText)  
 }
 
+if(gameScore.innerText=5){
 
-if(gameScore.innerText>=4){
+}
+
+if(gameScore.innerText>=15){
     alert(`YOU WIN \nYour Score Is:  ${gameScore.innerText}`)
     gameScore.innerText=""
     obs.removeAttribute("class")
-
+    playagain.innerText="play Again"
     playagain.setAttribute("Id","button")
 }
 
@@ -64,6 +87,10 @@ if(gameScore.innerText>=4){
       }, 100);
 
       playagain.addEventListener("click", function(){
+        window.location.reload();
         obs.setAttribute("class", "obsclass")
         
       })
+
+    // gameover.innerText="You Crashed";
+// console.log(gameover)

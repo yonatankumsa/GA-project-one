@@ -111,17 +111,33 @@ body{
     top:125px;
     left:600px;
     z-index: 1;
+    animation: yoni 3s linear infinite;
+    filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768))
+    
+}
+
+
+.obsclass1{
+    width:100px;
+    height:80px;
+    position:relative;
+    top:125px;
+    left:600px;
+    z-index: 1;
     animation: yoni 4s linear infinite;
     filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768))
     
 }
+
 .gamestatus{
     margin: auto;
     color:wheat;
     position: absolute;
-    top:20px;
-    left: 800px;
-    font-size: 50px;;
+    top:600px;
+    left: 250px;
+    font-size: 50px;
+    width:400px;
+    height:70px;
 
 } 
 
