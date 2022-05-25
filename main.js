@@ -9,10 +9,12 @@ let playagainbutton=document.getElementById("button")
 function yoni(){
 if(player.classList!=="jump"){
 
-
+   
     player.classList.add("jump")
     setTimeout(function () {
         player.classList.remove("jump")
+        playagainbutton.removeAttribute("class")
+
     },300)
 }
 
@@ -22,6 +24,8 @@ if(player.classList!=="jump"){
          })
 
       setInterval(function () {
+       
+
         const playerTvalue= parseInt(window.getComputedStyle(player).getPropertyValue("top"));
     //     const rockTvalue= parseInt(window.getComputedStyle(obs).getPropertyValue("right"));
     //  console.log(rockTvalue)
@@ -37,7 +41,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
    
     gameover.innerText="GAMEOVER";
     playagain.setAttribute("Id","button")
-    playagain.innerText="playagin"
+    playagain.innerText="play Again"
     obs.removeAttribute("class")
 }
 
@@ -54,8 +58,11 @@ if(gameScore.innerText>=10){
 
     playagain.setAttribute("Id","button")
 }
+
+
       }, 100);
 
       playagain.addEventListener("click", function(){
         obs.setAttribute("class", "obsclass")
+        
       })

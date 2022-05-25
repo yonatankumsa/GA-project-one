@@ -43,6 +43,7 @@ body{
     background-repeat: repeat-x;
     display: block;
     overflow-y: hidden;
+    
 
 }
 /* #dacar{
@@ -62,7 +63,7 @@ body{
     top:250px;
     animation: noni 600ms linear infinite;
     transition: 500ms;
-    /* z-index: 10; */
+    z-index: 10;
     filter:drop-shadow(1px 1px 7px white)
     
 }
@@ -109,9 +110,10 @@ body{
     position:relative;
     top:125px;
     left:600px;
-    z-index: 20;
+    z-index: 1;
     animation: yoni 4s linear infinite;
     filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768))
+    
 }
 .gamestatus{
     margin: auto;
@@ -130,24 +132,43 @@ body{
     position: relative;
     z-index: 30;
 } */
-
 #button{
     left:300px;
     top:500px;
     position: absolute;
-    height:35px;
-    width: 80px;
+    height:50px;
+    width: 100px;
     border-radius: 50%;
+    transition: 1s;
+    color:rgb(31, 171, 160);
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-#tree1{
+
+#button:hover{
+    left:270px;
+    top:500px;
+    position: absolute;
+    height:90px;
+    width: 190px;
+    border-radius: 10%;
+    background: url("/img/IMG_4627.jpg");
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    border:0px;
+
+
+}
+#clouds{
     width: 2000px;
     height: 300px;
     background: url("/img/10DFEFA3-9648-4F60-95AC-7204664608F4.PNG");
-    position: relative;
+    /* position: relative; */
     top:-100px;
     left: 100px;
-    animation: yoni 20s linear infinite;
+    animation: yoni 25s linear infinite;
     position: absolute;
     background-repeat: repeat-x;
     overflow-y: hidden;
