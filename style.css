@@ -63,6 +63,7 @@ img{
     animation: noni 600ms linear infinite;
     transition: 500ms;
     /* z-index: 10; */
+    filter:drop-shadow(1px 1px 7px white)
     
 }
 
@@ -86,26 +87,38 @@ img{
     animation: noni 1s linear infinite;
     animation: hop 300ms  linear ;
     transition: 500ms;
-    
+    filter:drop-shadow(1px 1px 7px white)
 }
 
 #score1{
     position: relative;
     top:-170px;
-    left:250px;
+    left:200px;
+    color:wheat;
 }
 #score{
     position: relative;
     top:-170px;
-    left:370px;
+    left:330px;
+    color:wheat;
 }
 
 .obsclass{
-    width:60px;
-    height:40px;
+    width:100px;
+    height:80px;
     position:relative;
     top:125px;
     left:600px;
     z-index: 20;
     animation: yoni 4s linear infinite;
+    filter:drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.768))
 }
+.gamestatus{
+    margin: auto;
+    color:wheat;
+    position: absolute;
+    top:20px;
+    left: 800px;
+    font-size: 50px;;
+
+} 

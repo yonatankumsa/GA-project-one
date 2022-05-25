@@ -30,14 +30,18 @@ if(player.classList!=="jump"){
 console.log(obsLeft)
 
 if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
-    alert("You Crashed")
+    // alert("You Crashed")
     gameScore.innerText=""
+    player.classList.remove("jump")
 }
 
 if(playerTvalue!==250 && obsLeft<50 && obsLeft>10){
 gameScore.innerText++;
+console.log(gameScore.innerText)
 }
-if(gameScore.innerText==="6"){
+
+
+if(gameScore.innerText==="15"){
     alert("high score")
     gameScore.innerText=""
 }
