@@ -86,8 +86,8 @@ console.log(gameScore.innerText)
 // }  
 
 
-if(gameScore.innerText>=3){
-   gamewin.textContent=`YOU WIN \n Your Score Is:  ${gameScore.innerText}`
+if(gameScore.innerText>=10){
+   gamewin.textContent=`YOU WIN \n  Score :  ${gameScore.innerText}`
     gameScore.innerText=""
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
