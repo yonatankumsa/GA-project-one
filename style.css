@@ -134,13 +134,23 @@ body{
     color:wheat;
     position: absolute;
     top:600px;
-    left: 250px;
+    left: 200px;
     font-size: 50px;
     width:400px;
     height:70px;
-
+    z-index: 50;
 } 
-
+.gamewinstatus{
+    margin: auto;
+    color:wheat;
+    position: absolute;
+    top:600px;
+    left: 200px;
+    font-size: 50px;
+    width:400px;
+    height:70px;
+    z-index: 50;
+} 
 /* .welcome{
     background: rgba(255, 0, 0, 0.339);
     width:1800px;

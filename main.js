@@ -2,7 +2,8 @@ let player = document.getElementById("player");
 let obs =document.getElementById("obs1")
 let obs1 =document.getElementById("obs12")
 let gameBackground = document.getElementById("background");
-let gameover = document.getElementsByClassName("gamestatus")
+let gameover = document.getElementById("gover")
+let gamewin = document.getElementById("win")
 let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
 
@@ -49,7 +50,8 @@ if(playerTvalue===250 && obs1Left<70 && obs1Left>30){
     playagain.setAttribute("Id","button")
     playagain.innerText="Play Again"
     obs.removeAttribute("class")
-    gameover.innerTEXT="You Crashed";
+    obs1.removeAttribute("class")
+    gameover.textContent="You Crashed";
     
 }
 
@@ -63,7 +65,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     playagain.innerText="Play Again"
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
-    gameover.innerTEXT="You Crashed";
+    gameover.textContent="You Crashed";
     
 }
 
@@ -83,8 +85,8 @@ console.log(gameScore.innerText)
 
 // }
 
-if(gameScore.innerText>=10){
-    alert(`YOU WIN \nYour Score Is:  ${gameScore.innerText}`)
+if(gameScore.innerText>=3){
+   gamewin.textContent=`YOU WIN \n Your Score Is:  ${gameScore.innerText}`
     gameScore.innerText=""
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
