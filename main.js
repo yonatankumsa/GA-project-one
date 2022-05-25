@@ -52,8 +52,8 @@ console.log(gameScore.innerText)
 }
 
 
-if(gameScore.innerText>=10){
-    alert("high score")
+if(gameScore.innerText>=4){
+    alert(`YOU WIN \nYour Score Is:  ${gameScore.innerText}`)
     gameScore.innerText=""
     obs.removeAttribute("class")
 
