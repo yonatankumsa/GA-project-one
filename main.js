@@ -70,7 +70,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
 }
 
 
-if(playerTvalue!==250 && obs1Left<70 && obs1Left>30){
+if(playerTvalue!==250 && obs1Left<70 && obs1Left>50){
   
     gameScore.innerText++;
     console.log(gameScore.innerText)  
