@@ -83,7 +83,8 @@ console.log(gameScore.innerText)
 
 // if(gameScore.innerText=5){
 
-// }
+// }  
+
 
 if(gameScore.innerText>=3){
    gamewin.textContent=`YOU WIN \n Your Score Is:  ${gameScore.innerText}`
