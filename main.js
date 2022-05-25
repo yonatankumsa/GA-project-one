@@ -43,6 +43,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     playagain.setAttribute("Id","button")
     playagain.innerText="play Again"
     obs.removeAttribute("class")
+    
 }
 
 if(playerTvalue!==250 && obsLeft<70 && obsLeft>30){
