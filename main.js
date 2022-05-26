@@ -104,7 +104,7 @@ if(gameScore.innerText>=10){
     
 }
 
-
+     
 
 playagain.addEventListener("click", function(){
     window.location.reload();
@@ -143,7 +143,7 @@ setTimeout( function(){
 },13000)
   
 
-setTimeout(function (){
+setTimeout(function (){    
    
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background2")

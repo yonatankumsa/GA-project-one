@@ -58,7 +58,7 @@ body{
     transition: 3s;
 
 }
-
+  
 @keyframes yoni{
     100%{transform: translateX(-1100px);}
     
