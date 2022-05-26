@@ -113,7 +113,7 @@ playagain.addEventListener("click", function(){
 
     gameover.innerText="";
     gamewin.innerText="";
-   
+    
    
     
   })
