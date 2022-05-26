@@ -6,9 +6,6 @@ let gameover = document.getElementById("gover")
 let gamewin = document.getElementById("win")
 let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
-let chbackground = document.getElementById("gbackground")
-let chbackground1 = document.getElementById("gbackground1")
-let chbackground2 = document.getElementById("gbackground2")
 
 let playagainbutton=document.getElementById("button")
 function yoni(){
@@ -90,47 +87,58 @@ console.log(gameScore.innerText)
 
 
 if(gameScore.innerText>=10){
-   gamewin.textContent=`YOU WIN \n  Score :  ${gameScore.innerText}`
-    gameScore.innerText=""
+   
+    // gameScore.innerText=""
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
     playagain.innerText="play Again"
     playagain.setAttribute("Id","button")
+    gamewin.setAttribute("class","gamewinstatus")
+    gamewin.textContent=`YOU WIN \n  Score :  ${gameScore.innerText}`
 }
 
 
+
+playagain.addEventListener("click", function(){
+    window.location.reload();
+    obs.setAttribute("class", "obsclass")
+    obs1.setAttribute("class", "obsclass1")
+
+    gameover.innerText="";
+    gamewin.innerText="";
+    
+  })
+
       }, 100);
 
-      playagain.addEventListener("click", function(){
-        // window.location.reload();
-        obs.setAttribute("class", "obsclass")
-        
-      })
 
     // gameover.innerText="You Crashed";
 // console.log(gameover)
 
 
-chbackground.addEventListener("click", function(){
+setTimeout( function(){
+  
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background")
    
     
-})
+},1000)
   
 
-chbackground1.addEventListener("click", function(){
+setTimeout( function(){
+   
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background1")
 
-})
+},11000)
   
 
-chbackground2.addEventListener("click", function(){
+setTimeout(function (){
+   
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background2")
    
   
 
-})
+},6000)
   

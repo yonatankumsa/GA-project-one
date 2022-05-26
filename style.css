@@ -16,7 +16,8 @@ body{
     border-radius: 5%;
     overflow-y: hidden;
     z-index: 0;
-    filter:drop-shadow(1px 1px 7px white)
+    filter:drop-shadow(1px 1px 20px rgb(32, 210, 130));
+    transition: 3s;
 
 }
 #background1{
@@ -33,7 +34,8 @@ body{
     border-radius: 5%;
     overflow-y: hidden;
     z-index: 0;
-    filter:drop-shadow(1px 1px 7px white)
+    filter:drop-shadow(1px 1px 20px rgb(255, 200, 0));
+    transition: 3s;
 
 }
 
@@ -51,7 +53,8 @@ body{
     border-radius: 5%;
     overflow-y: hidden;
     z-index: 0;
-    filter:drop-shadow(1px 1px 7px white)
+    filter:drop-shadow(1px 1px 20px rgb(192, 93, 0));
+    transition: 3s;
 
 }
 
@@ -168,13 +171,14 @@ body{
 .gamestatus{
     margin: auto;
     color:rgb(16, 143, 132);
-    position: absolute;
+    position:absolute;
     top:550px;
     left: 230px;
     font-size: 50px;
     width:400px;
     height:70px;
     z-index: 50;
+    filter:drop-shadow(1px 1px 10px rgb(255, 0, 0));
 } 
 .gamewinstatus{
     margin: auto;
@@ -186,6 +190,7 @@ body{
     width:400px;
     height:70px;
     z-index: 50;
+
 } 
 /* #welcome{
     background: rgba(255, 0, 0, 0.339);
@@ -241,7 +246,7 @@ body{
   display: none;
 
 }
-
+/* 
 #gbackground{
     position: relative;
     left: 750px;
@@ -275,4 +280,4 @@ body{
     background: url("/img/game-desert-background-vector.jpeg");
     background-size: cover;
 
-}
+} */
