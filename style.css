@@ -256,9 +256,9 @@ body{
 @keyframes shadows{
    
     0%{ filter:drop-shadow(1px 1px 20px rgb(255, 0, 0));}
-    30%{ filter:drop-shadow(1px 1px 20px rgb(246, 255, 0));}
-    50%{ filter:drop-shadow(1px 1px 20px rgb(13, 255, 0));}
-    75%{ filter:drop-shadow(1px 1px 20px rgb(136, 0, 255));}
+    30%{ filter:drop-shadow(1px 1px 30px rgb(246, 255, 0));}
+    50%{ filter:drop-shadow(1px 1px 15px rgb(13, 255, 0));}
+    75%{ filter:drop-shadow(1px 1px 25px rgb(136, 0, 255));}
     100%{ filter:drop-shadow(1px 1px 20px rgb(255, 0, 0));}
 }
 
@@ -270,5 +270,12 @@ body{
     75%{ filter:drop-shadow(1px 1px 13px rgb(32, 210, 130));}
     100%{ filter:drop-shadow(1px 1px 17px rgb(32, 210, 130));}
 }
-
-
+/*   
+#startbutton{
+    position: absolute;
+    left:750px;
+    top:400px;
+    width: 70px;
+    height: 30px;
+    border-radius: 10%;
+} */

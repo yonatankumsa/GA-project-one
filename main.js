@@ -6,6 +6,7 @@ let gameover = document.getElementById("gover")
 let gamewin = document.getElementById("win")
 let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
+let startbutton = document.getElementById("startbutton")
 
 let playagainbutton=document.getElementById("button")
 function yoni(){
@@ -51,7 +52,8 @@ if(playerTvalue===250 && obs1Left<70 && obs1Left>30){
     playagain.innerText="Play Again"
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
-    gameover.textContent="You Crashed";
+    gameover.textContent="You Crushed";
+    audio1()
     
 }
 
@@ -66,6 +68,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
     gameover.textContent="You Crushed";
+    audio1()
     
 }
 
@@ -86,8 +89,8 @@ console.log(gameScore.innerText)
 // }  
 
 
-if(gameScore.innerText>=15){
-   
+if(gameScore.innerText>=10){
+ 
     // gameScore.innerText=""
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
@@ -95,6 +98,7 @@ if(gameScore.innerText>=15){
     playagain.setAttribute("Id","button")
     gamewin.setAttribute("class","gamewinstatus")
     gamewin.textContent=`YOU WIN \n  Score :  ${gameScore.innerText}`
+    
 }
 
 
@@ -106,6 +110,8 @@ playagain.addEventListener("click", function(){
 
     gameover.innerText="";
     gamewin.innerText="";
+   
+   
     
   })
 
@@ -116,13 +122,14 @@ playagain.addEventListener("click", function(){
 // console.log(gameover)
 
 
-// setTimeout( function(){
+setTimeout( function(){
   
-//     gameBackground.removeAttribute("id")
-//     gameBackground.setAttribute("id", "background")
+    gameBackground.removeAttribute("id")
+    gameBackground.setAttribute("id", "background")
+    
    
     
-// },1000)
+},1000)
   
 
 setTimeout( function(){
@@ -142,3 +149,25 @@ setTimeout(function (){
 
 },8000)
   
+
+// window.addEventListener("DOMContentLoaded", function(){
+//     obs.removeAttribute("class")
+//     obs1.removeAttribute("class")
+// })
+
+// startbutton.addEventListener("click",function(){
+//     obs.setAttribute("class", "obsclass")
+//     obs1.setAttribute("class", "obsclass1")
+
+
+// })
+
+function audio1(){
+    let audio1 = new Audio("/audios/20220526_110054264.m4a");
+    audio1.play();
+}
+
+function audio2(){
+let audiotwo= new Audio("/audios/Dababy-LET-S-GO-sound-effect.m4a")
+audiotwo.play();
+}
