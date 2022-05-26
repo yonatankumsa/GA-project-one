@@ -4,7 +4,7 @@ body{
 }
 #background{
     position: relative;
-    background: url("/img/seamless-cartoon-nature-landscape-with-2d-game-vector-9827582.jpeg");
+    background: url("./img/seamless-cartoon-nature-landscape-with-2d-game-vector-9827582.jpeg");
     width:700px;
     height:400px;
     overflow-x: hidden;
@@ -23,7 +23,7 @@ body{
 }
 #background1{
     position: relative;
-    background: url("/img/8c5628fb166d24655c9c1b87ef1d403c2a7f8f24.webp");
+    background: url("./img/8c5628fb166d24655c9c1b87ef1d403c2a7f8f24.webp");
     width:700px;
     height:400px;
     overflow-x: hidden;
@@ -42,7 +42,7 @@ body{
 
 #background2{
     position: relative;
-    background: url("/img/game-desert-background-vector.jpeg");
+    background: url("./img/game-desert-background-vector.jpeg");
     width:700px;
     height:400px;
     overflow-x: hidden;
@@ -73,7 +73,7 @@ body{
 }
 
 #road{
-    background: url("/img/side-view-road-roadside-desert-260nw-1467479009.jpeg");
+    background: url("./img/side-view-road-roadside-desert-260nw-1467479009.jpeg");
     width:1900px;
     height:100px;
     animation: yoni 4s linear infinite;
@@ -97,7 +97,7 @@ body{
 .playerc{
     width:100px;
   
-    background: url("/img/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
+    background: url("./img/E743C0C1-9B90-4A5B-A001-4497C6BB2DBD.PNG");
     position: absolute;
     left:10px;
     top:250px;
@@ -226,7 +226,7 @@ body{
     height:90px;
     width: 190px;
     border-radius: 10%;
-    background: url("/img/IMG_4627.jpg");
+    background: url("./img/IMG_4627.jpg");
     background-size: cover;
     color:rgb(255, 255, 255);
     font-size: 20px;
@@ -237,7 +237,7 @@ body{
 #clouds{
     width: 2000px;
     height: 300px;
-    background: url("/img/10DFEFA3-9648-4F60-95AC-7204664608F4.PNG");
+    background: url("./img/10DFEFA3-9648-4F60-95AC-7204664608F4.PNG");
     /* position: relative; */
     top:-100px;
     left: 100px;
