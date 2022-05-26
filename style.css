@@ -4,7 +4,7 @@ body{
 }
 #background{
     position: relative;
-    background: url("/img/78812fd262025d24e53452a1307bbb6d\ \(1\).png");
+    background: url("/img/seamless-cartoon-nature-landscape-with-2d-game-vector-9827582.jpeg");
     width:700px;
     height:400px;
     overflow-x: hidden;
@@ -18,7 +18,8 @@ body{
     z-index: 0;
     filter:drop-shadow(1px 1px 20px rgb(32, 210, 130));
     transition: 3s;
-
+    animation: shadowbac1 5s linear infinite;  
+    
 }
 #background1{
     position: relative;
@@ -260,3 +261,14 @@ body{
     75%{ filter:drop-shadow(1px 1px 20px rgb(136, 0, 255));}
     100%{ filter:drop-shadow(1px 1px 20px rgb(255, 0, 0));}
 }
+
+@keyframes shadowbac1{
+   
+    0%{ filter:drop-shadow(1px 1px 20px rgb(32, 210, 130))}
+    30%{ filter:drop-shadow(1px 1px 10px rgb(32, 210, 130));}
+    50%{ filter:drop-shadow(1px 1px 50px rgb(32, 210, 130));}
+    75%{ filter:drop-shadow(1px 1px 13px rgb(32, 210, 130));}
+    100%{ filter:drop-shadow(1px 1px 17px rgb(32, 210, 130));}
+}
+
+

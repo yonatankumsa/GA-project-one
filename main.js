@@ -65,7 +65,7 @@ if(playerTvalue===250 && obsLeft<70 && obsLeft>30){
     playagain.innerText="Play Again"
     obs.removeAttribute("class")
     obs1.removeAttribute("class")
-    gameover.textContent="You Crashed";
+    gameover.textContent="You Crushed";
     
 }
 
@@ -86,7 +86,7 @@ console.log(gameScore.innerText)
 // }  
 
 
-if(gameScore.innerText>=10){
+if(gameScore.innerText>=15){
    
     // gameScore.innerText=""
     obs.removeAttribute("class")
@@ -116,13 +116,13 @@ playagain.addEventListener("click", function(){
 // console.log(gameover)
 
 
-setTimeout( function(){
+// setTimeout( function(){
   
-    gameBackground.removeAttribute("id")
-    gameBackground.setAttribute("id", "background")
+//     gameBackground.removeAttribute("id")
+//     gameBackground.setAttribute("id", "background")
    
     
-},1000)
+// },1000)
   
 
 setTimeout( function(){
@@ -130,7 +130,7 @@ setTimeout( function(){
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background1")
 
-},11000)
+},13000)
   
 
 setTimeout(function (){
@@ -140,5 +140,5 @@ setTimeout(function (){
    
   
 
-},6000)
+},8000)
   
