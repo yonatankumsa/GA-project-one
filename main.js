@@ -9,6 +9,7 @@ let playagain= document.querySelector("button")
 let startbutton = document.getElementById("startbutton")
 
 let playagainbutton=document.getElementById("button")
+audio2()
 function yoni(){
 if(player.classList!=="jump"){
 
@@ -17,8 +18,10 @@ if(player.classList!=="jump"){
     setTimeout(function () {
         player.classList.remove("jump")
         playagainbutton.removeAttribute("class")
+      
 
     },300)
+   
 }
 
 }
@@ -168,6 +171,6 @@ function audio1(){
 }
 
 function audio2(){
-let audiotwo= new Audio("/audios/Dababy-LET-S-GO-sound-effect.m4a")
+let audiotwo= new Audio("/audios/20220526_120502678 (1).m4a")
 audiotwo.play();
 }
