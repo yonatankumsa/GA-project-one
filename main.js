@@ -113,7 +113,7 @@ playagain.addEventListener("click", function(){
 
     gameover.innerText="";
     gamewin.innerText="";
-   
+    
    
     
   })
@@ -166,11 +166,11 @@ setTimeout(function (){
 // })
 
 function audio1(){
-    let audio1 = new Audio("/audios/20220526_110054264.m4a");
+    let audio1 = new Audio("./audios/20220526_110054264.m4a");
     audio1.play();
 }
 
 function audio2(){
-let audiotwo= new Audio("/audios/20220526_120502678 (1).m4a")
+let audiotwo= new Audio("./audios/20220526_120502678 (1).m4a")
 audiotwo.play();
 }
