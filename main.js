@@ -6,6 +6,7 @@ let gameover = document.getElementById("gover")
 let gamewin = document.getElementById("win")
 let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
+let chbackground = document.getElementById("gbackground")
 
 let playagainbutton=document.getElementById("button")
 function yoni(){
@@ -106,3 +107,7 @@ if(gameScore.innerText>=10){
 
     // gameover.innerText="You Crashed";
 // console.log(gameover)
+
+$(chbackground).click(function() {
+    $('body').toggleClass('night-mode');
+     });
