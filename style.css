@@ -19,7 +19,41 @@ body{
     filter:drop-shadow(1px 1px 7px white)
 
 }
+#background1{
+    position: relative;
+    background: url("/img/8c5628fb166d24655c9c1b87ef1d403c2a7f8f24.webp");
+    width:700px;
+    height:400px;
+    overflow-x: hidden;
+    background-size: cover; 
+    /* margin: 5rem auto;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    overflow-y: hidden;
+    z-index: 0;
+    filter:drop-shadow(1px 1px 7px white)
 
+}
+
+#background2{
+    position: relative;
+    background: url("/img/game-desert-background-vector.jpeg");
+    width:700px;
+    height:400px;
+    overflow-x: hidden;
+    background-size: cover; 
+    /* margin: 5rem auto;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    overflow-y: hidden;
+    z-index: 0;
+    filter:drop-shadow(1px 1px 7px white)
+
+}
 
 @keyframes yoni{
     100%{transform: translateX(-1100px);}
@@ -235,7 +269,6 @@ body{
     position: relative;
     left: 750px;
     top:-500px;
-    background: red;
     width: 200px;
     height:100px;
     border-radius: 10%;

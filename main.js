@@ -7,6 +7,8 @@ let gamewin = document.getElementById("win")
 let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
 let chbackground = document.getElementById("gbackground")
+let chbackground1 = document.getElementById("gbackground1")
+let chbackground2 = document.getElementById("gbackground2")
 
 let playagainbutton=document.getElementById("button")
 function yoni(){
@@ -100,7 +102,7 @@ if(gameScore.innerText>=10){
       }, 100);
 
       playagain.addEventListener("click", function(){
-        window.location.reload();
+        // window.location.reload();
         obs.setAttribute("class", "obsclass")
         
       })
@@ -108,6 +110,27 @@ if(gameScore.innerText>=10){
     // gameover.innerText="You Crashed";
 // console.log(gameover)
 
-$(chbackground).click(function() {
-    $('body').toggleClass('night-mode');
-     });
+
+chbackground.addEventListener("click", function(){
+    gameBackground.removeAttribute("id")
+    gameBackground.setAttribute("id", "background")
+   
+    
+})
+  
+
+chbackground1.addEventListener("click", function(){
+    gameBackground.removeAttribute("id")
+    gameBackground.setAttribute("id", "background1")
+
+})
+  
+
+chbackground2.addEventListener("click", function(){
+    gameBackground.removeAttribute("id")
+    gameBackground.setAttribute("id", "background2")
+   
+  
+
+})
+  
