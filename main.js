@@ -21,7 +21,7 @@ if(player.classList!=="jump"){
       
 
     },300)
-   
+      
 }
 
 }
