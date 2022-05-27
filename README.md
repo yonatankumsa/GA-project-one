@@ -11,7 +11,7 @@ https://yonatankumsa.github.io/GA-project-one/
 
 ⌨️  User have to press any key jump and avoid obstacles
 
-🎁 User will gain 1 points each time they jump an obstacle.
+🎁 User will gain points each time they jump an obstacle.
 
 🏆 The game winning point is 10.
 
