@@ -37,7 +37,7 @@ body{
     z-index: 0;
     filter:drop-shadow(1px 1px 20px rgb(255, 200, 0));
     transition: 3s;
-
+    animation: shadowbac2 5s linear infinite;  
 }
 
 #background2{
@@ -56,9 +56,10 @@ body{
     z-index: 0;
     filter:drop-shadow(1px 1px 20px rgb(192, 93, 0));
     transition: 3s;
+    animation: shadowbac3 5s linear infinite;  
 
 }
-
+  
 @keyframes yoni{
     100%{transform: translateX(-1100px);}
     
@@ -264,20 +265,51 @@ body{
 
 @keyframes shadowbac1{
    
-    0%{ filter:drop-shadow(1px 1px 20px rgb(32, 210, 130))}
+    0%{ filter:drop-shadow(1px 1px 20px rgb(32, 210, 130));}
     30%{ filter:drop-shadow(1px 1px 10px rgb(32, 210, 130));}
     50%{ filter:drop-shadow(1px 1px 50px rgb(32, 210, 130));}
     75%{ filter:drop-shadow(1px 1px 13px rgb(32, 210, 130));}
     100%{ filter:drop-shadow(1px 1px 17px rgb(32, 210, 130));}
 }
 
-/*   
-#startbutton{
-    position: absolute;
-    left:750px;
-    top:400px;
-    width: 70px;
-    height: 30px;
-    border-radius: 10%;
-} */
-     
+
+@keyframes shadowbac2{
+   
+    0%{ filter:drop-shadow(1px 1px 20px rgb(255, 200, 0));}
+    30%{ filter:drop-shadow(1px 1px 10px rgb(255, 200, 0));}
+    50%{ filter:drop-shadow(1px 1px 50px rgb(255, 200, 0));}
+    75%{ filter:drop-shadow(1px 1px 13px rgb(255, 200, 0));}
+    100%{ filter:drop-shadow(1px 1px 17px rgb(255, 200, 0));}
+}
+
+
+@keyframes shadowbac3{
+   
+    0%{ filter:drop-shadow(1px 1px 20px rgb(192, 93, 0));}
+    30%{ filter:drop-shadow(1px 1px 10px rgb(192, 93, 0));}
+    50%{ filter:drop-shadow(1px 1px 50px rgb(192, 93, 0));}
+    75%{ filter:drop-shadow(1px 1px 13px rgb(192, 93, 0));}
+    100%{ filter:drop-shadow(1px 1px 17px rgb(192, 93, 0));}
+}
+
+@media (max-width: 760px) {
+
+#leftscreen{
+    position:relative;
+    width: 300px;
+    height: 400px;
+    left:200px;
+  
+    top:100px;
+}
+
+#rightscreen{
+    position:relative;
+    width: 300px;
+    height: 400px;
+    left:-500px;
+   
+    top:100px;
+   
+}
+}

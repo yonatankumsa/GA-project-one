@@ -8,6 +8,9 @@ let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
 let startbutton = document.getElementById("startbutton")
 
+let right =document.getElementById("rightscreen")
+let left =document.getElementById("leftscreen")
+
 let playagainbutton=document.getElementById("button")
 audio2()
 function yoni(){
@@ -18,16 +21,19 @@ if(player.classList!=="jump"){
     setTimeout(function () {
         player.classList.remove("jump")
         playagainbutton.removeAttribute("class")
-      
+    
 
     },300)
-      
+   
 }
 
 }
       let click = document.addEventListener("keyup", function(e)  {
           yoni()
          })
+
+         right.addEventListener("touchstart",yoni)
+         left.addEventListener("touchstart",yoni)
 
       setInterval(function () {
        
@@ -104,7 +110,7 @@ if(gameScore.innerText>=10){
     
 }
 
-
+     
 
 playagain.addEventListener("click", function(){
     window.location.reload();
@@ -143,7 +149,7 @@ setTimeout( function(){
 },13000)
   
 
-setTimeout(function (){
+setTimeout(function (){    
    
     gameBackground.removeAttribute("id")
     gameBackground.setAttribute("id", "background2")
@@ -174,3 +180,4 @@ function audio2(){
 let audiotwo= new Audio("./audios/20220526_120502678 (1).m4a")
 audiotwo.play();
 }
+
