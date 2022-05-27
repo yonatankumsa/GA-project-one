@@ -292,7 +292,7 @@ body{
     100%{ filter:drop-shadow(1px 1px 17px rgb(192, 93, 0));}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 760px) {
 
 #leftscreen{
     position:relative;
