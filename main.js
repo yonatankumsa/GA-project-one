@@ -8,6 +8,9 @@ let gameScore = document.getElementById("score");
 let playagain= document.querySelector("button")
 let startbutton = document.getElementById("startbutton")
 
+let right =document.getElementById("rightscreen")
+let left =document.getElementById("leftscreen")
+
 let playagainbutton=document.getElementById("button")
 audio2()
 function yoni(){
@@ -18,7 +21,7 @@ if(player.classList!=="jump"){
     setTimeout(function () {
         player.classList.remove("jump")
         playagainbutton.removeAttribute("class")
-      
+    
 
     },300)
    
@@ -28,6 +31,9 @@ if(player.classList!=="jump"){
       let click = document.addEventListener("keyup", function(e)  {
           yoni()
          })
+
+         right.addEventListener("touchstart",yoni)
+         left.addEventListener("touchstart",yoni)
 
       setInterval(function () {
        
