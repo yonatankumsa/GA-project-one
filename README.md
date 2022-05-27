@@ -1,7 +1,7 @@
-           /////////GA PROJECT ONE/////////
+           GA PROJECT ONE
 
 
-              *******DA-CAR********
+              DA-CAR
 
 A car game like the jumping dinosaur from Google chrome where you can jump obstacles  to avoid losing the game.Obstacles will be coming infront of you to challenge you to play more enjoyfully .
 
